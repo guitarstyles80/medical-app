@@ -1,10 +1,6 @@
 http://localhost:3000/api/patients/67239ac0b964545b68eaab0c
-
 http://localhost:3000/api/appointments/67239ac0b964545b68eaab0c
-
 http://localhost:3000/api/appointments/67239ac0b964545b68eaab0c/67239b9db964545b68eaab0f
-
 http://localhost:3000/api/observations/67239ac0b964545b68eaab0c
-
 http://localhost:3000/api/observations/67239ac0b964545b68eaab0c/67239b26b964545b68eaab0e
 

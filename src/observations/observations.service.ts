@@ -13,11 +13,11 @@ export class ObservationsService {
 
     async getObservations(patientId: string) {
         try{
-            const appointments = 
+            const observations = 
                 await this.connection.collection(Collections.OBSERVATIONS)
                 .find({ 'patientId' : patientId }).toArray();
 
-            return appointments;
+            return observations;
 
         }catch(ex){
             return ex;
@@ -27,11 +27,11 @@ export class ObservationsService {
 
     async getObservation(patientId: string, observationId: string) {
         try{
-            const appointments = 
+            const observation = 
                 await this.connection.collection(Collections.OBSERVATIONS)
                 .findOne({ 'patientId' : patientId, '_id' : this.connection.ObjectId(observationId) });
 
-            return appointments;
+            return observation;
 
         }catch(ex){
             return ex;
