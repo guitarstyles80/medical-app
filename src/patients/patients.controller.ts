@@ -12,4 +12,10 @@ export class PatientsController {
     }
 
 
+    @Get(':id/flat')
+    getPatientDetails(@Req() request: Request, @Param() params: any): object {
+        return this.PatientsService.getPatientDetails(params.id);
+    }
+
+
 }
